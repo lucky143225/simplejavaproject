@@ -24,27 +24,6 @@ pipeline {
             }
         }
         
-       /*  stage("Test Cases"){
-             steps{
-                sh "mvn test"
-            }
-        }
-        */
-       /*
-        stage("Sonarqube Analysis"){
-           steps{
-               withSonarQubeEnv('sonar-server') {
-                    sh '''$SCANNER_HOME/bin/sonar-scanner \
-                       -Dsonar.projectName=simplejavaproject \
-                       -Dsonar.projectKey=simplejavaproject \
-                       -Dsonar.sources=. \
-                       -Dsonar.host.url=http://localhost:9000'''
-                 }
-              }
-           }
-         */
-        
-        
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
