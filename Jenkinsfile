@@ -30,7 +30,7 @@ pipeline {
             }
         }
         */
-
+       /*
         stage("Sonarqube Analysis"){
            steps{
                withSonarQubeEnv('sonar-server') {
@@ -42,9 +42,9 @@ pipeline {
                  }
               }
            }
-
+         */
         
-        /*
+        
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
@@ -55,7 +55,6 @@ pipeline {
                 }
             }
         }
-        */
         
         stage("OWASP Dependency Check"){
             steps{
